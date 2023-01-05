@@ -1,5 +1,5 @@
 fn spawn_app() {
-    let server = zero::run().expect("Failed to launch server");
+    let server = zero::run("127.0.0.1:8000").expect("Failed to launch server");
     let _ = tokio::spawn(server);
 }
 
